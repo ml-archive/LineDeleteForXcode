@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,7 @@
 		0168858C1D8D1C95007A8954 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0168858B1D8D1C95007A8954 /* Cocoa.framework */; };
 		016885911D8D1C95007A8954 /* DeleteLineExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016885901D8D1C95007A8954 /* DeleteLineExtension.swift */; };
 		016885931D8D1C95007A8954 /* DeleteLineCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016885921D8D1C95007A8954 /* DeleteLineCommand.swift */; };
-		016885971D8D1C95007A8954 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 016885891D8D1C95007A8954 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		016885971D8D1C95007A8954 /* Line Delete.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 016885891D8D1C95007A8954 /* Line Delete.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				016885971D8D1C95007A8954 /* Extension.appex in Embed App Extensions */,
+				016885971D8D1C95007A8954 /* Line Delete.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,7 +46,7 @@
 		0168857A1D8D1C50007A8954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0168857D1D8D1C50007A8954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0168857F1D8D1C50007A8954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		016885891D8D1C95007A8954 /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		016885891D8D1C95007A8954 /* Line Delete.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Line Delete.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0168858B1D8D1C95007A8954 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0168858F1D8D1C95007A8954 /* Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
 		016885901D8D1C95007A8954 /* DeleteLineExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteLineExtension.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				016885751D8D1C50007A8954 /* LineDeleteForXcode.app */,
-				016885891D8D1C95007A8954 /* Extension.appex */,
+				016885891D8D1C95007A8954 /* Line Delete.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,9 +152,9 @@
 			productReference = 016885751D8D1C50007A8954 /* LineDeleteForXcode.app */;
 			productType = "com.apple.product-type.application";
 		};
-		016885881D8D1C95007A8954 /* Extension */ = {
+		016885881D8D1C95007A8954 /* Line Delete */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 016885981D8D1C95007A8954 /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildConfigurationList = 016885981D8D1C95007A8954 /* Build configuration list for PBXNativeTarget "Line Delete" */;
 			buildPhases = (
 				016885851D8D1C95007A8954 /* Sources */,
 				016885861D8D1C95007A8954 /* Frameworks */,
@@ -164,9 +164,9 @@
 			);
 			dependencies = (
 			);
-			name = Extension;
+			name = "Line Delete";
 			productName = Extension;
-			productReference = 016885891D8D1C95007A8954 /* Extension.appex */;
+			productReference = 016885891D8D1C95007A8954 /* Line Delete.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +192,7 @@
 				};
 			};
 			buildConfigurationList = 016885701D8D1C50007A8954 /* Build configuration list for PBXProject "LineDeleteForXcode" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -205,7 +205,7 @@
 			projectRoot = "";
 			targets = (
 				016885741D8D1C50007A8954 /* LineDeleteForXcode */,
-				016885881D8D1C95007A8954 /* Extension */,
+				016885881D8D1C95007A8954 /* Line Delete */,
 			);
 		};
 /* End PBXProject section */
@@ -252,7 +252,7 @@
 /* Begin PBXTargetDependency section */
 		016885961D8D1C95007A8954 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 016885881D8D1C95007A8954 /* Extension */;
+			target = 016885881D8D1C95007A8954 /* Line Delete */;
 			targetProxy = 016885951D8D1C95007A8954 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -401,7 +401,7 @@
 				INFOPLIST_FILE = Extension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.LineDeleteForXcode.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.LineDeleteForXcode.LineDelete;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -418,7 +418,7 @@
 				INFOPLIST_FILE = Extension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.LineDeleteForXcode.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nodes.LineDeleteForXcode.LineDelete;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -444,14 +444,16 @@
 				016885841D8D1C50007A8954 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		016885981D8D1C95007A8954 /* Build configuration list for PBXNativeTarget "Extension" */ = {
+		016885981D8D1C95007A8954 /* Build configuration list for PBXNativeTarget "Line Delete" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				016885991D8D1C95007A8954 /* Debug */,
 				0168859A1D8D1C95007A8954 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

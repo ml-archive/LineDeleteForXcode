@@ -38,8 +38,12 @@ class DeleteLineCommand: NSObject, XCSourceEditorCommand {
                             userInfo: [NSLocalizedDescriptionKey : "Error while getting current line."])
         }
 
-        let range = NSRange(location: selection.start.line,
-                            length: selection.end.line - selection.start.line)
-        buffer.lines.remove(range)
+        if selection.start.line == selection.end.line {
+            buffer.lines.removeObject(at: selection.start.line)
+        } else {
+            let range = NSRange(location: selection.start.line,
+                                length: selection.end.line - selection.start.line)
+            buffer.lines.removeObjects(in: range)
+        }
     }
 }

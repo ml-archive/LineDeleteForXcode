@@ -1,14 +1,14 @@
 # Line Delete for Xcode
 
-This repository is an Xcode 8 Editor Extension for deleting lines or ranges of lines in your source code.
+This repository is an Xcode 9 Editor Extension for deleting lines or ranges of lines in your source code.
 
-![Plaforms](https://img.shields.io/badge/platform-macOS-Xcode-lightgrey.svg)
+![Plaforms](https://img.shields.io/badge/platform-macOS-lightgrey.svg)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nodes-ios/LineDeleteForXcode/blob/master/LICENSE)
 
 ## 📝 Requirements
 
-* macOS 10.10+
-* Swift 3.0+
+* macOS 10.13+
+* Swift 4.1+
 
 ## 📦 Installation
 
